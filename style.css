@@ -1,0 +1,79 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 200px 1fr;
+}
+
+.logo-holder {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo {
+    height: auto;
+    width: 40px;
+    filter: invert(100%);
+}
+
+.logo-text {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.sidebar {
+    background-color: #60a5fa;
+    grid-row: 1 / -1;
+    padding: 10px 10px 10px 10px;
+}
+
+.webpages-holder {
+    margin-top: 50px;
+    padding-left: 10px;
+}
+
+.webpage-card {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.webpage-card  img{
+    filter: invert(100%);
+    height: auto;
+    width: 20px;
+}
+
+.webpage-text {
+    color: white;
+    padding-left: 10px;
+}
+
+.header {
+    grid-column: 2 / -1;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.main-view {
+    background-color: #eff6ff;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.projects {
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.announcements {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.trending {
+    grid-area: 2 / 2 / 3 / 3;
+}
