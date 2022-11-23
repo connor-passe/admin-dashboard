@@ -6,7 +6,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 250px 1fr;
-    grid-template-rows: 200px 1fr;
+    grid-template-rows: auto 1fr;
 }
 
 .logo-holder {
@@ -107,7 +107,32 @@ body {
     white-space: nowrap;
 }
 
+.bar {
+    display: grid;
+    grid-template-columns: 80px 1fr 1fr;
+    align-items: center;
+    padding-top: 20px;
+}
 
+.bar .profile-pic {
+    width: 70px;
+    height: auto;
+    border-radius: 50px;
+}
+
+.bar .button-holder {
+    justify-self: end;
+    display: flex;
+    gap: 20px;
+}
+
+.button-holder button {
+    border-radius: 20px;
+    border-width: 0px;
+    color: white;
+    background-color: #60a5fa;
+    padding: 8px 20px;
+}
 
 .main-view {
     background-color: #eff6ff;
