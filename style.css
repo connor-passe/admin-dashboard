@@ -82,6 +82,9 @@ body {
 .search-bar {
     margin-right: 40px;
     width: 400px;
+    border-radius: 10px;
+    border-width: 0px;
+    background-color: #eff6ff;
 }
 
 .user-info-area {
@@ -124,6 +127,16 @@ body {
     justify-self: end;
     display: flex;
     gap: 20px;
+}
+
+.bar .salutation {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.bar .name-and-info {
+    font-weight: 500;
+    font-size: 26px;
 }
 
 .button-holder button {
@@ -234,10 +247,41 @@ hr {
 
 .trending {
     grid-area: 2 / 2 / 3 / 3;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+}
+
+.trending-card-holder {
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    padding: 20px 10px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.trending-card {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    grid-template-rows: auto auto;
+    margin-bottom: 20px;
+    column-gap: 20px;
+    align-items:center;
+    
 }
 
 .trending img {
     height: auto;
-    width: 30px;
+    width: 40px;
+    grid-row: 1 / -1;
+}
+
+.handle {
+    font-size: 10px;
+}
+
+.account-name {
+    font-size: 10px;
 }
