@@ -57,7 +57,57 @@ body {
 .header {
     grid-column: 2 / -1;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    padding: 10px 30px 10px 30px;
+    display: flex;
+    flex-direction: column;
 }
+
+.top-bar {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.search-area {
+    display: flex;
+}
+
+.search {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.search-bar {
+    margin-right: 40px;
+    width: 400px;
+}
+
+.user-info-area {
+    display: flex;
+    align-items: center;
+}
+
+.alert-bell {
+    width: 20px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.top-bar .profile-pic {
+    width: 40px;
+    height: auto;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+.top-bar .user-name {
+    width: 200px;
+    white-space: nowrap;
+}
+
+
 
 .main-view {
     background-color: #eff6ff;
